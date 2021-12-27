@@ -10,5 +10,6 @@ export const theme = {
   },
   color: {
     lightGray: "#aaa",
+    light: "#fff",
   },
 };

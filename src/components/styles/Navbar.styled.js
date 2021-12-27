@@ -44,7 +44,7 @@ export const NavList = styled.li``;
 export const StyledNavLinks = styled(NavLink)`
   font-size: 12px;
   letter-spacing: 1.5px;
-  color: gray;
+  color: ${({ theme }) => theme.color.lightGray};
   transition: 0.3s ease;
   text-transform: uppercase;
   position: relative;
@@ -66,6 +66,10 @@ export const StyledNavLinks = styled(NavLink)`
 
   &:hover::after {
     width: 100%;
+  }
+
+  &.active {
+    color: ${({ theme }) => theme.color.light};
   }
 
   &.active::after {
