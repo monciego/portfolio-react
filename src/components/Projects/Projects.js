@@ -3,7 +3,7 @@ import { StyledProjects } from "../styles/Projects.styled";
 
 const Projects = () => {
   return (
-    <StyledProjects>
+    <StyledProjects id="projects">
       <h1>projects</h1>
     </StyledProjects>
   );

@@ -6,19 +6,22 @@ import Projects from "./components/Projects/Projects";
 import GlobalStyles from "./components/styles/Global";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./components/styles/Theme";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <>
-        <GlobalStyles />
-        <Navbar />
-        <Home />
-        <Projects />
-        <About />
-        <Footer />
-      </>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <>
+          <GlobalStyles />
+          <Navbar />
+          <Home />
+          <Projects />
+          <About />
+          <Footer />
+        </>
+      </ThemeProvider>
+    </Router>
   );
 }
 

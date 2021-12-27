@@ -3,7 +3,7 @@ import { StyledAbout } from "../styles/About.styled";
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <h1>About</h1>
     </StyledAbout>
   );
