@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SectionHeading = styled.div`
   text-align: center;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: ${(props) => props.mb || "3rem"};
 `;
 
 export const SectionTitle = styled.h2`

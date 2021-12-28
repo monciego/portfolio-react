@@ -1,4 +1,5 @@
 import React from "react";
+import { StyledParagraph, StyledLink } from "../styles/Typography.styled";
 import { StyledProjects } from "../styles/Projects.styled";
 import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
 
@@ -8,6 +9,16 @@ const Projects = () => {
       <SectionHeading>
         <SectionTitle number="01">Projects</SectionTitle>
       </SectionHeading>
+      <StyledParagraph dark="true" textAlign="center">
+        Selected projects I've worked on recently.{" "}
+        <StyledLink
+          href="https://github.com/monciego"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Want to see more?
+        </StyledLink>
+      </StyledParagraph>
     </StyledProjects>
   );
 };
