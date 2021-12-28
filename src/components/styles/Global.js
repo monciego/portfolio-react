@@ -32,8 +32,11 @@ const GlobalStyles = createGlobalStyle`
 
     section{
         padding: 6.6125rem 5rem 7.6125rem 5rem;
-    }
 
+        @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+            padding: 6.6125rem 2.5rem 7.6125rem 2.5rem;
+         }
+      }
 `;
 
 export default GlobalStyles;
