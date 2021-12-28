@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     section{
-        height: 100vh;
+        padding: 6.6125rem 5rem 7.6125rem 5rem;
     }
 
 `;
