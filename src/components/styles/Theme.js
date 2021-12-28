@@ -12,4 +12,8 @@ export const theme = {
     lightGray: "#aaa",
     light: "#fff",
   },
+  CTA: {
+    primary: "#e64e04",
+    secondary: "#4353ff",
+  },
 };

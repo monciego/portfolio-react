@@ -1,0 +1,77 @@
+.change-text::before {
+  content: "design";
+  animation: change infinite 5s;
+}
+
+@keyframes change {
+  0% {
+    content: "design";
+  }
+  50% {
+    content: "create";
+  }
+
+  100% {
+    transform: translateX(-50%);
+    content: "design";
+  }
+}
+
+/* * glitch  */
+.responsive {
+  display: inline-block;
+  animation: stretch 5s cubic-bezier(0.4, 1.4, 0.75, 0.9) infinite;
+  transform-origin: center;
+}
+
+.responsive:nth-of-type(1) {
+  animation-delay: 3s;
+}
+
+.responsive :nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+
+.responsive :nth-of-type(3) {
+  animation-delay: 4.8s;
+}
+
+.responsive :nth-of-type(4) {
+  animation-delay: 2s;
+}
+
+.responsive :nth-of-type(5) {
+  animation-delay: 1.2s;
+}
+
+.responsive :nth-of-type(6) {
+  animation-delay: 3.6s;
+}
+
+.responsive :nth-of-type(7) {
+  animation-delay: 2.4s;
+}
+
+.responsive :nth-of-type(8) {
+  animation-delay: 3.2s;
+}
+
+p span:nth-of-type(9) {
+  animation-delay: 4s;
+}
+
+p span:nth-of-type(10) {
+  animation-delay: 1.6s;
+}
+
+@keyframes stretch {
+  5% {
+    transform: scaleX(10);
+    opacity: 0.1;
+  }
+
+  15% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
