@@ -28,7 +28,7 @@ export const ProjectsContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin-top: 3rem;
 `;
 
@@ -109,7 +109,7 @@ export const ProjectLiveLink = styled.a`
 
 export const ProjectCard = styled.article`
   background: #fff;
-  width: 28rem;
+  width: 32rem;
   height: 23rem;
   display: flex;
   justify-content: center;
