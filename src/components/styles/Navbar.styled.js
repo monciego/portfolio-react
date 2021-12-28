@@ -38,7 +38,7 @@ export const NavLogo = styled.img`
 export const NavMenuList = styled.ul`
   display: flex;
   list-style: none;
-  gap: 1.25rem;
+  gap: 1.5rem;
   flex: 1;
   margin-left: 8rem;
 
@@ -50,8 +50,8 @@ export const NavMenuList = styled.ul`
 export const NavList = styled.li``;
 
 export const StyledNavLinks = styled(NavLink)`
-  font-size: 12px;
-  letter-spacing: 1.5px;
+  font-size: 0.75rem;
+  letter-spacing: 0.09375rem;
   color: ${({ theme }) => theme.color.lightGray};
   transition: 0.3s ease;
   text-transform: uppercase;
@@ -67,7 +67,7 @@ export const StyledNavLinks = styled(NavLink)`
     left: 0;
     width: 0;
     transform: scaleX(1);
-    height: 1px;
+    height: 0.0625rem;
     background: ${({ theme }) => theme.backgroundColor.orange};
     transition: 0.3s ease-in-out;
   }
@@ -88,15 +88,15 @@ export const StyledNavLinks = styled(NavLink)`
     left: 0;
     width: 100%;
     transform: scaleX(1);
-    height: 1px;
+    height: 0.0625rem;
     background: ${({ theme }) => theme.backgroundColor.orange};
     transition: 0.3s ease-in-out;
   }
 `;
 
 export const StyledCTA = styled.a`
-  font-size: 10px;
-  letter-spacing: 3px;
+  font-size: 0.625rem;
+  letter-spacing: 0.1875rem;
   font-weight: 500;
   transition: 0.3s ease;
   text-transform: uppercase;
@@ -176,10 +176,10 @@ export const Menu = styled.div`
 `;
 
 export const Line = styled.div`
-  height: 1.8px;
+  height: 0.1125rem;
   width: ${(props) => props.width || "2rem"};
   background: ${({ theme }) => theme.color.light};
-  margin: 4.5px 0;
+  margin: 0.28125rem 0;
   transition: 0.3s ease;
   margin-left: ${(props) => props.ml || "0"};
 `;

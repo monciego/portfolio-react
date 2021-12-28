@@ -21,11 +21,11 @@ export const Name = styled.h2`
   color: #fff9f9;
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 `;
 
@@ -37,15 +37,15 @@ export const Title = styled.h1`
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     text-align: center;
-    font-size: 52px;
+    font-size: 3.25rem;
   }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    font-size: 43px;
+    font-size: 2.6875rem;
   }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 `;
 
@@ -91,7 +91,7 @@ export const Social = styled.a`
   color: ${({ theme }) => theme.color.light};
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
     color: ${({ theme }) => theme.backgroundColor.orange};
   }
 
@@ -101,10 +101,10 @@ export const Social = styled.a`
     transform: translate(-50%, -50%);
     left: -1rem;
     top: 50%;
-    height: 8px;
-    width: 8px;
+    height: 0.5rem;
+    width: 0.5rem;
     background: ${({ theme }) => theme.backgroundColor.orange};
-    border-radius: 45px;
+    border-radius: 2.8125rem;
     opacity: 0;
     transition: all 0.3s;
   }
@@ -119,8 +119,8 @@ export const Quote = styled.span`
   right: 25%;
   bottom: 30%;
   color: #94929d;
-  font-size: 10px;
-  letter-spacing: 2px;
+  font-size: 0.625rem;
+  letter-spacing: 0.125rem;
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     display: none;

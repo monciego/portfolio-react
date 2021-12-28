@@ -3,19 +3,19 @@ import { Link as Button } from "react-scroll";
 
 export const StyledButton = styled(Button)`
   box-shadow: none !important;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   font-weight: 500;
-  height: 40px;
-  line-height: 40px;
+  height: 2.5rem;
+  line-height: 2.5rem;
   font-size: 0.9375em;
   text-transform: uppercase;
   color: #fff;
-  padding: 0 40px;
+  padding: 0 2.5rem;
   outline: none !important;
   overflow: hidden;
   display: inline-block;
   position: relative;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
   border: 0;
   cursor: pointer;
 
@@ -23,23 +23,24 @@ export const StyledButton = styled(Button)`
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 0.85em;
-    padding: 0 35px;
+    padding: 0 2.1875rem;
   }
 
   &::before {
     content: ${(props) => `url(${props.icon})`};
-    font: 15px/1.2em font;
+    font: 0.9375rem/1.2em font;
     color: #fff;
     position: absolute;
     height: 100%;
-    right: 25px;
+    right: 1.5625rem;
     top: 50%;
-    margin-top: -9px;
+    margin-top: -0.5625rem;
     transition: all 0.3s;
     opacity: 0;
     filter: alpha(opacity=0);
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
+    position: absolute;
+    -webkit-transform: translateX(-1.25);
+    transform: translateX(-1.25);
   }
 
   &:hover:before {
@@ -56,7 +57,7 @@ export const StyledButton = styled(Button)`
   }
 
   &:hover span {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-0.625rem);
+    transform: translateX(-0.625rem);
   }
 `;
