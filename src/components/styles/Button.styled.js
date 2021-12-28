@@ -7,7 +7,7 @@ export const StyledButton = styled(Button)`
   font-weight: 500;
   height: 40px;
   line-height: 40px;
-  font-size: 15px;
+  font-size: 0.9375em;
   text-transform: uppercase;
   color: #fff;
   padding: 0 40px;
@@ -20,6 +20,11 @@ export const StyledButton = styled(Button)`
   cursor: pointer;
 
   background: ${(props) => (props.secondary ? "#4353ff" : "#e64e04")};
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 0.85em;
+    padding: 0 35px;
+  }
 
   &::before {
     content: ${(props) => `url(${props.icon})`};

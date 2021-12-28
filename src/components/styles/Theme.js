@@ -16,4 +16,9 @@ export const theme = {
     primary: "#e64e04",
     secondary: "#4353ff",
   },
+  breakpoints: {
+    md: "930px",
+    sm: "768px",
+    xs: "500px",
+  },
 };

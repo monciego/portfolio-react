@@ -25,6 +25,10 @@ export const StyledNavbar = styled.nav`
     height: 14vh;
     z-index: 999;
   }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 0 2.5rem;
+  }
 `;
 
 export const NavLogo = styled.img`
@@ -37,6 +41,10 @@ export const NavMenuList = styled.ul`
   gap: 1.25rem;
   flex: 1;
   margin-left: 8rem;
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    display: none;
+  }
 `;
 
 export const NavList = styled.li``;
@@ -152,4 +160,26 @@ export const StyledCTA = styled.a`
     transform: scale3d(0, 1, 1);
     transform-origin: 0% 50%;
   }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    display: none;
+  }
+`;
+
+export const Menu = styled.div`
+  cursor: pointer;
+  display: none;
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    display: block;
+  }
+`;
+
+export const Line = styled.div`
+  height: 1.8px;
+  width: ${(props) => props.width || "2rem"};
+  background: ${({ theme }) => theme.color.light};
+  margin: 4.5px 0;
+  transition: 0.3s ease;
+  margin-left: ${(props) => props.ml || "0"};
 `;

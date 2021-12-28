@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {
+  Line,
+  Menu,
   NavList,
   NavLogo,
   NavMenuList,
@@ -96,6 +98,12 @@ const Navbar = () => {
           </span>
         </span>
       </StyledCTA>
+
+      <Menu>
+        <Line width="1.5rem" />
+        <Line />
+        <Line width="1.5rem" ml="0.5rem" />
+      </Menu>
     </StyledNavbar>
   );
 };

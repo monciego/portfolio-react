@@ -8,12 +8,25 @@ export const StyledHome = styled.section`
   justify-content: center;
   padding: 0 8rem;
   height: 100vh;
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    align-items: center;
+    padding: 0;
+  }
 `;
 
 export const Name = styled.h2`
   font-size: 2.1875rem;
   position: relative;
   color: #fff9f9;
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 35px;
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    font-size: 30px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -21,6 +34,19 @@ export const Title = styled.h1`
   font-weight: 700;
   margin: 0.5rem 0 1rem 0;
   color: #f7f7f7;
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    text-align: center;
+    font-size: 52px;
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 43px;
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    font-size: 35px;
+  }
 `;
 
 export const StyledButtonsContainer = styled.div`
@@ -52,6 +78,10 @@ export const Socials = styled.div`
   position: absolute;
   right: 5rem;
   bottom: 3rem;
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    display: none;
+  }
 `;
 
 export const Social = styled.a`
@@ -91,4 +121,8 @@ export const Quote = styled.span`
   color: #94929d;
   font-size: 10px;
   letter-spacing: 2px;
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    display: none;
+  }
 `;
