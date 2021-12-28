@@ -1,6 +1,7 @@
 export const theme = {
   fonts: {
     montserrat: "'Montserrat', sans-serif",
+    cardo: "'Cardo', serif",
   },
   backgroundColor: {
     dark: "#0d0e0e",
