@@ -42,7 +42,6 @@ const About = () => {
             share my knowledge to my fellow students and developers. And I am
             looking forward to talk with you!
           </StyledParagraph>
-
           <Resume>
             <ResumeLink href="/" icon={downloadIcon}>
               Download Resume

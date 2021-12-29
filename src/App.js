@@ -7,6 +7,7 @@ import GlobalStyles from "./components/styles/Global";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./components/styles/Theme";
 import { BrowserRouter as Router } from "react-router-dom";
+import ParallaxComponent from "./components/Parallax/Parallax";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Home />
           <Projects />
           <About />
+          <ParallaxComponent />
           <Footer />
         </>
       </ThemeProvider>
