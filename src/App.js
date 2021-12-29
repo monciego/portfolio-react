@@ -8,6 +8,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./components/styles/Theme";
 import { BrowserRouter as Router } from "react-router-dom";
 import ParallaxComponent from "./components/Parallax/Parallax";
+import Technologies from "./components/Technologies/Technologies";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Projects />
           <About />
           <ParallaxComponent />
+          <Technologies />
           <Footer />
         </>
       </ThemeProvider>

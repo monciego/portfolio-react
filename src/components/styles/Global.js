@@ -17,7 +17,6 @@ const GlobalStyles = createGlobalStyle`
     }
 
     img {
-        min-width: 100%;
         object-fit: cover;
     }
 
