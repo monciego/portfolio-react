@@ -9,11 +9,10 @@ export const StyledNavbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20vh;
+  height: 7.5625rem;
   padding: 0 5rem;
   transition: 0.5s ease-in-out;
   z-index: 999;
-  background-color: ${({ theme }) => theme.backgroundColor.dark};
   color: #fff;
 
   &.sticky {
@@ -21,8 +20,8 @@ export const StyledNavbar = styled.nav`
     left: 0;
     right: 0;
     top: 0;
-    background-color: #0b0b0c;
-    height: 14vh;
+    background-color: ${({ theme }) => theme.backgroundColor.dark};
+    height: 5.32875rem;
     z-index: 999;
   }
 

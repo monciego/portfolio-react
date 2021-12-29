@@ -31,10 +31,10 @@ const GlobalStyles = createGlobalStyle`
     }
 
     section{
-        padding: 6.6125rem 5rem 7.6125rem 5rem;
+        padding: 4.32875rem 5rem 7.6125rem 5rem;
 
         @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
-            padding: 6.6125rem 2.5rem 7.6125rem 2.5rem;
+            padding: 7.6125rem 2.5rem 7.6125rem 2.5rem;
          }
       }
 `;
