@@ -13,6 +13,7 @@ import {
   FooterSmallTitle,
   FooterSmallTitleWrapper,
   FooterSocials,
+  Small,
   StyledFooter,
 } from "../styles/Footer.styled";
 import { animateScroll as scroll } from "react-scroll";
@@ -89,7 +90,14 @@ const Footer = () => {
               .appendChild(document.createTextNode(new Date().getFullYear()));
             </script>{" "}
           </span>
-          , Jericho Bantiquete
+          ,{" "}
+          <Small
+            href="https://github.com/monciego"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jericho Bantiquete
+          </Small>
         </small>
       </Copyright>
     </StyledFooter>

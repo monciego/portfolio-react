@@ -274,3 +274,5 @@ export const Copyright = styled.div`
     padding-top: 0.85rem;
   }
 `;
+
+export const Small = styled.a``;
