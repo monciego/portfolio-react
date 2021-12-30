@@ -1,5 +1,4 @@
 import React from "react";
-import { BsArrowUpRightCircle } from "react-icons/bs";
 import {
   PlaygroundImage,
   PlaygroundProjectDetails,
@@ -8,6 +7,8 @@ import {
   PlaygroundProjectName,
   PlaygroundProject,
   LinkWrapper,
+  LiveIcon,
+  PlaygroundProjectWrapper,
 } from "../styles/Playground.styled";
 
 const PlaygroundProjectComponent = ({
@@ -17,24 +18,31 @@ const PlaygroundProjectComponent = ({
   hasLink,
 }) => {
   return (
-    <PlaygroundProject>
-      <PlaygroundProjectImageContainer hasLink={hasLink}>
-        <PlaygroundImage src={img} />
-      </PlaygroundProjectImageContainer>
-      <PlaygroundProjectDetails>
-        <PlaygroundProjectName>{projectName}</PlaygroundProjectName>
-        <LinkWrapper hasLink={hasLink}>
-          <PlayGroundProjectLive
-            href={liveLink}
-            hasLink={hasLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live <BsArrowUpRightCircle />{" "}
-          </PlayGroundProjectLive>
-        </LinkWrapper>
-      </PlaygroundProjectDetails>
-    </PlaygroundProject>
+    <PlaygroundProjectWrapper hasLink={hasLink}>
+      <PlaygroundProject hasLink={hasLink}>
+        <PlaygroundProjectImageContainer
+          href={liveLink}
+          hasLink={hasLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <PlaygroundImage src={img} />
+        </PlaygroundProjectImageContainer>
+        <PlaygroundProjectDetails>
+          <PlaygroundProjectName>{projectName}</PlaygroundProjectName>
+          <LinkWrapper hasLink={hasLink}>
+            <PlayGroundProjectLive
+              href={liveLink}
+              hasLink={hasLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live <LiveIcon />
+            </PlayGroundProjectLive>
+          </LinkWrapper>
+        </PlaygroundProjectDetails>
+      </PlaygroundProject>
+    </PlaygroundProjectWrapper>
   );
 };
 
