@@ -14,6 +14,8 @@ export const theme = {
     darkGray: "#262637",
     lightGray: "#aaa",
     light: "#fff",
+    secondaryLight: "#f1f1f1",
+    tertiaryLight: "#d3d3d3",
     link: "#4353ff",
   },
   CTA: {
