@@ -1,7 +1,7 @@
-import dribble from "../../assets/dribble.png";
-import random from "../../assets/random.png";
-import countdown from "../../assets/countdown.png";
-import awwwards from "../../assets/awwwards.png";
+import dribble from "../../assets/playground/dribble.png";
+import random from "../../assets/playground/random.png";
+import countdown from "../../assets/playground/countdown.png";
+import awwwards from "../../assets/playground/awwwards.png";
 
 export const projectsData = [
   {

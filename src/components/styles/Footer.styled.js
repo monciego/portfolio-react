@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import arrowUp from "../../assets/icon-arrow-up.svg";
+import arrowUp from "../../assets//icons/icon-arrow-up.svg";
 
 export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.backgroundColor.dark};
