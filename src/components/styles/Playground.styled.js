@@ -11,7 +11,7 @@ export const StyledPlayground = styled.section`
 `;
 
 export const PlaygroundProjectContainer = styled.div`
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
