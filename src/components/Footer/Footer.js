@@ -23,6 +23,7 @@ const toTop = () => {
 };
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <StyledFooter>
       <FooterSmallTitleWrapper>
@@ -83,14 +84,7 @@ const Footer = () => {
 
       <Copyright>
         <small>
-          &copy; Copyright
-          <span id="copyright">
-            <script>
-              document .getElementById("copyright")
-              .appendChild(document.createTextNode(new Date().getFullYear()));
-            </script>{" "}
-          </span>
-          ,{" "}
+          &copy; Copyright {year},{" "}
           <Small
             href="https://github.com/monciego"
             target="_blank"
