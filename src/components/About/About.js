@@ -12,6 +12,7 @@ import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
 import { StyledParagraph } from "../styles/Typography.styled";
 import myImage from "../../assets/my-image.jpg";
 import downloadIcon from "../../assets/download-icon.svg";
+import resume from "../../assets/Resume.pdf";
 
 const About = () => {
   return (
@@ -43,7 +44,11 @@ const About = () => {
             looking forward to talk with you!
           </StyledParagraph>
           <Resume>
-            <ResumeLink href="/" icon={downloadIcon}>
+            <ResumeLink
+              href={resume}
+              icon={downloadIcon}
+              download="resume-jericho-bantiquete"
+            >
               Download Resume
             </ResumeLink>
           </Resume>
