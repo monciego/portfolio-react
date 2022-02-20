@@ -7,6 +7,10 @@ import {
   project3Mobile,
   project4Laptop,
   project4Mobile,
+  project5Laptop,
+  project5Mobile,
+  project6Laptop,
+  project6Mobile,
 } from "./projectImages";
 
 export const projectData = [
@@ -41,5 +45,21 @@ export const projectData = [
     title: "IT Company",
     codeLink: "https://github.com/monciego/coderig-landing-page",
     liveLink: "https://codeegrid.netlify.app/",
+  },
+  {
+    id: 5,
+    image: project5Laptop,
+    transitionImage: project5Mobile,
+    title: "Gym Fitness Website",
+    codeLink: "https://github.com/monciego/intrepide",
+    liveLink: "https://intrepide.netlify.app/",
+  },
+  {
+    id: 6,
+    image: project6Laptop,
+    transitionImage: project6Mobile,
+    title: "Space Tourism",
+    codeLink: "https://github.com/monciego/space-tourism",
+    liveLink: "https://spacetourism-monciego.netlify.app/",
   },
 ];
