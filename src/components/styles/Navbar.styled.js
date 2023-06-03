@@ -5,7 +5,7 @@ export const StyledNavbar = styled.nav`
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
